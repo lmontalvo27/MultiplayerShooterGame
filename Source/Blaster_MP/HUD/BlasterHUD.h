@@ -29,6 +29,8 @@ public:
 	virtual void DrawHUD() override;
 private:
 	FHUDPACKAGE HUDPackage;
+
+	void DrawCrosshair(UTexture2D* Texture, FVector2D ViewportCenter);
 public:
 	FORCEINLINE void SetHUDPackage(const FHUDPACKAGE& Package) { HUDPackage = Package; }
 };
